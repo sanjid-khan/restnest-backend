@@ -17,7 +17,7 @@
             "header": [],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n  \"name\": \"Sanjid\",\r\n  \"email\": \"sadin@example.com\",\r\n  \"password\": \"123456\",\r\n  \"role\": \"ADMIN\"\r\n}",
+              "raw": "{\r\n  \"name\": \"Sanjid\",\r\n  \"email\": \"abc10@example.com\",\r\n  \"password\": \"123456\",\r\n  \"role\":\"TENANT\"\r\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -25,7 +25,8 @@
               }
             },
             "url": {
-              "raw": "restnestbackend-nine.vercel.app/api/auth/register",
+              "raw": "https://restnestbackend-nine.vercel.app/api/auth/register",
+              "protocol": "https",
               "host": [
                 "restnestbackend-nine",
                 "vercel",
@@ -47,7 +48,7 @@
             "header": [],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n  \"email\": \"abc2@example.com\",\r\n  \"password\": \"123456\"\r\n}",
+              "raw": "{\r\n  \"email\": \"abc4@example.com\",\r\n  \"password\": \"123456\"\r\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -55,7 +56,8 @@
               }
             },
             "url": {
-              "raw": "restnestbackend-nine.vercel.app/api/auth/login",
+              "raw": "https://restnestbackend-nine.vercel.app/api/auth/login",
+              "protocol": "https",
               "host": [
                 "restnestbackend-nine",
                 "vercel",
@@ -79,7 +81,8 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "restnestbackend-nine.vercel.app/api/auth/me",
+              "raw": "https://restnestbackend-nine.vercel.app/api/auth/me",
+              "protocol": "https",
               "host": [
                 "restnestbackend-nine",
                 "vercel",
@@ -105,7 +108,8 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "restnestbackend-nine.vercel.app/api/user/me",
+              "raw": "https://restnestbackend-nine.vercel.app/api/user/me",
+              "protocol": "https",
               "host": [
                 "restnestbackend-nine",
                 "vercel",
@@ -135,7 +139,8 @@
               }
             },
             "url": {
-              "raw": "restnestbackend-nine.vercel.app/api/user/my-profile",
+              "raw": "https://restnestbackend-nine.vercel.app/api/user/my-profile",
+              "protocol": "https",
               "host": [
                 "restnestbackend-nine",
                 "vercel",
@@ -170,12 +175,13 @@
               }
             },
             "url": {
-              "raw": "http://localhost:5000/api/categories",
-              "protocol": "http",
+              "raw": "https://restnestbackend-nine.vercel.app/api/categories",
+              "protocol": "https",
               "host": [
-                "localhost"
+                "restnestbackend-nine",
+                "vercel",
+                "app"
               ],
-              "port": "5000",
               "path": [
                 "api",
                 "categories"
@@ -190,12 +196,13 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "http://localhost:5000/api/categories",
-              "protocol": "http",
+              "raw": "https://restnestbackend-nine.vercel.app/api/categories",
+              "protocol": "https",
               "host": [
-                "localhost"
+                "restnestbackend-nine",
+                "vercel",
+                "app"
               ],
-              "port": "5000",
               "path": [
                 "api",
                 "categories"
@@ -218,12 +225,13 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "http://localhost:5000/api/categories/c321b8ad-bc0c-4a89-8782-249dd27730ba",
-              "protocol": "http",
+              "raw": "https://restnestbackend-nine.vercel.app/api/categories/c321b8ad-bc0c-4a89-8782-249dd27730ba",
+              "protocol": "https",
               "host": [
-                "localhost"
+                "restnestbackend-nine",
+                "vercel",
+                "app"
               ],
-              "port": "5000",
               "path": [
                 "api",
                 "categories",
@@ -248,12 +256,13 @@
               }
             },
             "url": {
-              "raw": "http://localhost:5000/api/categories/c321b8ad-bc0c-4a89-8782-249dd27730ba",
-              "protocol": "http",
+              "raw": "https://restnestbackend-nine.vercel.app/api/categories/c321b8ad-bc0c-4a89-8782-249dd27730ba",
+              "protocol": "https",
               "host": [
-                "localhost"
+                "restnestbackend-nine",
+                "vercel",
+                "app"
               ],
-              "port": "5000",
               "path": [
                 "api",
                 "categories",
@@ -269,12 +278,13 @@
             "method": "DELETE",
             "header": [],
             "url": {
-              "raw": "http://localhost:5000/api/categories/4baa1663-a2e3-46b7-abd8-0708683111d9",
-              "protocol": "http",
+              "raw": "https://restnestbackend-nine.vercel.app/api/categories/4baa1663-a2e3-46b7-abd8-0708683111d9",
+              "protocol": "https",
               "host": [
-                "localhost"
+                "restnestbackend-nine",
+                "vercel",
+                "app"
               ],
-              "port": "5000",
               "path": [
                 "api",
                 "categories",
@@ -314,7 +324,8 @@
               }
             },
             "url": {
-              "raw": "restnestbackend-nine.vercel.app/api/landlord/properties",
+              "raw": "https://restnestbackend-nine.vercel.app/api/landlord/properties",
+              "protocol": "https",
               "host": [
                 "restnestbackend-nine",
                 "vercel",
@@ -335,7 +346,8 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "restnestbackend-nine.vercel.app/api/properties",
+              "raw": "https://restnestbackend-nine.vercel.app/api/properties",
+              "protocol": "https",
               "host": [
                 "restnestbackend-nine",
                 "vercel",
@@ -349,7 +361,6 @@
                 {
                   "key": "searchTerm",
                   "value": "uttara",
-                  "type": "text",
                   "disabled": true
                 },
                 {
@@ -428,7 +439,8 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "restnestbackend-nine.vercel.app/api/properties/d6eac32e-1d1a-419c-9a62-bbb899a4b591",
+              "raw": "https://restnestbackend-nine.vercel.app/api/properties/d6eac32e-1d1a-419c-9a62-bbb899a4b591",
+              "protocol": "https",
               "host": [
                 "restnestbackend-nine",
                 "vercel",
@@ -458,7 +470,8 @@
               }
             },
             "url": {
-              "raw": "restnestbackend-nine.vercel.app/api/landlord/properties/70c97dc5-ed19-47bd-9940-efdf02789e86",
+              "raw": "https://restnestbackend-nine.vercel.app/api/landlord/properties/70c97dc5-ed19-47bd-9940-efdf02789e86",
+              "protocol": "https",
               "host": [
                 "restnestbackend-nine",
                 "vercel",
@@ -480,7 +493,8 @@
             "method": "DELETE",
             "header": [],
             "url": {
-              "raw": "restnestbackend-nine.vercel.app/api/landlord/properties/e46e2074-aa56-4150-809d-5089fa6d8b07",
+              "raw": "https://restnestbackend-nine.vercel.app/api/landlord/properties/e46e2074-aa56-4150-809d-5089fa6d8b07",
+              "protocol": "https",
               "host": [
                 "restnestbackend-nine",
                 "vercel",
@@ -508,7 +522,7 @@
             "header": [],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n  \"propertyId\": \"d6eac32e-1d1a-419c-9a62-bbb899a4b591\",\r\n  \"moveInDate\": \"2026-09-01\",\r\n  \"message\": \"We want to open a retail brand outlet here. Need to discuss the advance payment and renovation permissions.\"\r\n}",
+              "raw": "{\r\n  \"propertyId\": \"f26413f1-5e9e-4740-a6c2-a1589a118e35\",\r\n  \"moveInDate\": \"2026-09-01\",\r\n  \"message\": \"We want to open a retail brand outlet here. Need to discuss the advance payment and renovation permissions.\"\r\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -516,7 +530,8 @@
               }
             },
             "url": {
-              "raw": "restnestbackend-nine.vercel.app/api/rentals",
+              "raw": "https://restnestbackend-nine.vercel.app/api/rentals",
+              "protocol": "https",
               "host": [
                 "restnestbackend-nine",
                 "vercel",
@@ -536,7 +551,8 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "restnestbackend-nine.vercel.app/api/rentals",
+              "raw": "https://restnestbackend-nine.vercel.app/api/rentals",
+              "protocol": "https",
               "host": [
                 "restnestbackend-nine",
                 "vercel",
@@ -559,7 +575,8 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "restnestbackend-nine.vercel.app/api/rentals/9f674417-aed3-4d14-9429-bfd7581c7e6d",
+              "raw": "https://restnestbackend-nine.vercel.app/api/rentals/8385cf8e-2e5f-4fdc-929f-15f47df51878",
+              "protocol": "https",
               "host": [
                 "restnestbackend-nine",
                 "vercel",
@@ -568,7 +585,7 @@
               "path": [
                 "api",
                 "rentals",
-                "9f674417-aed3-4d14-9429-bfd7581c7e6d"
+                "8385cf8e-2e5f-4fdc-929f-15f47df51878"
               ]
             }
           },
@@ -580,7 +597,8 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "restnestbackend-nine.vercel.app/api/landlord/requests",
+              "raw": "https://restnestbackend-nine.vercel.app/api/landlord/requests",
+              "protocol": "https",
               "host": [
                 "restnestbackend-nine",
                 "vercel",
@@ -610,7 +628,8 @@
               }
             },
             "url": {
-              "raw": "restnestbackend-nine.vercel.app/api/landlord/requests/5bb445c3-da26-46de-a298-e57d6f814e41",
+              "raw": "https://restnestbackend-nine.vercel.app/api/landlord/requests/be03f10e-4a5d-45b1-97c5-669e4a112061",
+              "protocol": "https",
               "host": [
                 "restnestbackend-nine",
                 "vercel",
@@ -620,7 +639,7 @@
                 "api",
                 "landlord",
                 "requests",
-                "5bb445c3-da26-46de-a298-e57d6f814e41"
+                "be03f10e-4a5d-45b1-97c5-669e4a112061"
               ]
             }
           },
@@ -638,7 +657,7 @@
             "header": [],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n  \"rentalRequestId\": \"5bb445c3-da26-46de-a298-e57d6f814e41\"\r\n}",
+              "raw": "{\r\n  \"rentalRequestId\": \"be03f10e-4a5d-45b1-97c5-669e4a112061\"\r\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -646,7 +665,8 @@
               }
             },
             "url": {
-              "raw": "restnestbackend-nine.vercel.app/api/payments/create",
+              "raw": "https://restnestbackend-nine.vercel.app/api/payments/create",
+              "protocol": "https",
               "host": [
                 "restnestbackend-nine",
                 "vercel",
@@ -670,7 +690,8 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "restnestbackend-nine.vercel.app/api/payments",
+              "raw": "https://restnestbackend-nine.vercel.app/api/payments",
+              "protocol": "https",
               "host": [
                 "restnestbackend-nine",
                 "vercel",
@@ -690,7 +711,8 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "restnestbackend-nine.vercel.app/api/payments/2afa9cc4-9001-40f0-8058-5a3d2245c412",
+              "raw": "https://restnestbackend-nine.vercel.app/api/payments/d2e744ae-4bab-4a0b-8269-ff536a57eaa7",
+              "protocol": "https",
               "host": [
                 "restnestbackend-nine",
                 "vercel",
@@ -699,7 +721,7 @@
               "path": [
                 "api",
                 "payments",
-                "2afa9cc4-9001-40f0-8058-5a3d2245c412"
+                "d2e744ae-4bab-4a0b-8269-ff536a57eaa7"
               ]
             }
           },
@@ -717,7 +739,7 @@
             "header": [],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n  \"rentalRequestId\": \"5bb445c3-da26-46de-a298-e57d6f814e41\",\r\n  \"rating\": 4,\r\n  \"comment\": \"Excellent property! The duplex villa was exactly as described. The private pool was clean, and the landlord was very supportive during our stay. Highly recommended!\"\r\n}",
+              "raw": "{\r\n  \"rentalRequestId\": \"be03f10e-4a5d-45b1-97c5-669e4a112061\",\r\n  \"rating\": 4,\r\n  \"comment\": \"Excellent property! The duplex villa was exactly as described. The private pool was clean, and the landlord was very supportive during our stay. Highly recommended!\"\r\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -725,7 +747,8 @@
               }
             },
             "url": {
-              "raw": "restnestbackend-nine.vercel.app/api/reviews",
+              "raw": "https://restnestbackend-nine.vercel.app/api/reviews",
+              "protocol": "https",
               "host": [
                 "restnestbackend-nine",
                 "vercel",
@@ -745,7 +768,8 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "restnestbackend-nine.vercel.app/api/reviews/property/d6eac32e-1d1a-419c-9a62-bbb899a4b591",
+              "raw": "https://restnestbackend-nine.vercel.app/api/reviews/property/d6eac32e-1d1a-419c-9a62-bbb899a4b591",
+              "protocol": "https",
               "host": [
                 "restnestbackend-nine",
                 "vercel",
@@ -776,7 +800,8 @@
               }
             },
             "url": {
-              "raw": "restnestbackend-nine.vercel.app/api/reviews/352dd840-a4e8-467e-906b-017d72e171c4",
+              "raw": "https://restnestbackend-nine.vercel.app/api/reviews/352dd840-a4e8-467e-906b-017d72e171c4",
+              "protocol": "https",
               "host": [
                 "restnestbackend-nine",
                 "vercel",
@@ -797,7 +822,8 @@
             "method": "DELETE",
             "header": [],
             "url": {
-              "raw": "restnestbackend-nine.vercel.app/api/reviews/4d3edd32-2a41-4b98-ab10-a99c30e43730",
+              "raw": "https://restnestbackend-nine.vercel.app/api/reviews/4d3edd32-2a41-4b98-ab10-a99c30e43730",
+              "protocol": "https",
               "host": [
                 "restnestbackend-nine",
                 "vercel",
@@ -823,12 +849,13 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "http://localhost:5000/api/admin/users",
-              "protocol": "http",
+              "raw": "https://restnestbackend-nine.vercel.app/api/admin/users",
+              "protocol": "https",
               "host": [
-                "localhost"
+                "restnestbackend-nine",
+                "vercel",
+                "app"
               ],
-              "port": "5000",
               "path": [
                 "api",
                 "admin",
@@ -853,12 +880,13 @@
               }
             },
             "url": {
-              "raw": "http://localhost:5000/api/admin/users/c1a1c4e0-2e48-4e8c-ae67-036ceeb271c8",
-              "protocol": "http",
+              "raw": "https://restnestbackend-nine.vercel.app/api/admin/users/c1a1c4e0-2e48-4e8c-ae67-036ceeb271c8",
+              "protocol": "https",
               "host": [
-                "localhost"
+                "restnestbackend-nine",
+                "vercel",
+                "app"
               ],
-              "port": "5000",
               "path": [
                 "api",
                 "admin",
@@ -875,7 +903,8 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "restnestbackend-nine.vercel.app/api/admin/properties",
+              "raw": "https://restnestbackend-nine.vercel.app/api/admin/properties",
+              "protocol": "https",
               "host": [
                 "restnestbackend-nine",
                 "vercel",
@@ -896,7 +925,8 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "restnestbackend-nine.vercel.app/api/admin/rentals",
+              "raw": "https://restnestbackend-nine.vercel.app/api/admin/rentals",
+              "protocol": "https",
               "host": [
                 "restnestbackend-nine",
                 "vercel",
