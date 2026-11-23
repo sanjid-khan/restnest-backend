@@ -1,80 +1,93 @@
-import {prisma} from "../../lib/prisma";
+
+import { prisma } from "../../lib/prisma";
 import { UpdateProfilePayload } from "./user.interface";
 
-
-const getMyProfileFromDB = async (userId:string)=>{
-
+const getMyProfileFromDB = async (userId: string) => {
     const user = await prisma.user.findUniqueOrThrow({
-        where : {id : userId},
-        omit : {
-            password : true
+        where: { id: userId },
+        omit: {
+            password: true
         },
-        include : {
-            profile : true
+        include: {
+            profile: true
         }
     });
 
     return user;
+};
 
-}
-
-
-const updateMyProfileInDB = async (userId : string, payload:UpdateProfilePayload)=>{
-
-    const {name, email, profilePhoto, bio}=payload;
+const updateMyProfileInDB = async (
+    userId: string,
+    payload: UpdateProfilePayload
+) => {
+    const { name, email, profilePhoto, bio } = payload;
 
     if (email) {
-    const existingUser = await prisma.user.findFirst({
-      where: {
-        email,
-        NOT: {
-          id: userId,
-        },
-      },
-    });
+        const existingUser = await prisma.user.findFirst({
+            where: {
+                email,
+                NOT: {
+                    id: userId
+                }
+            }
+        });
 
-
-    if(existingUser) {
-      throw new Error("User with this email already exists");
-      }
-     }
+        if (existingUser) {
+            throw new Error("User with this email already exists");
+        }
+    }
 
     const updatedUser = await prisma.user.update({
-        where : { id : userId},
-
-        data : {
+        where: { id: userId },
+        data: {
             name,
             email,
-            profile:{
-        upsert:{
-           update:{
-            profilePhoto,
-            bio
-          },
-         create:{
-            profilePhoto,
-            bio
-           }
-          }
-         }
-
+            profile: {
+                upsert: {
+                    update: {
+                        profilePhoto,
+                        bio
+                    },
+                    create: {
+                        profilePhoto,
+                        bio
+                    }
+                }
+            }
         },
-
-        omit : {
-            password : true
+        omit: {
+            password: true
         },
-
-        include : {
-            profile : true
+        include: {
+            profile: true
         }
-    })
+    });
 
     return updatedUser;
-}
+};
 
+// ================= Saron-Contribution Start =================
 
+const deleteMyProfileFromDB = async (userId: string) => {
+    const deletedUser = await prisma.user.delete({
+        where: {
+            id: userId
+        },
+        omit: {
+            password: true
+        },
+        include: {
+            profile: true
+        }
+    });
+
+    return deletedUser;
+};
+
+// ================= Saron-Contribution End =================
 
 export const userService = {
     getMyProfileFromDB,
-    updateMyProfileInDB
-}
+    updateMyProfileInDB,
+    deleteMyProfileFromDB
+};
